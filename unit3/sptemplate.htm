@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nitish's CS253 Blog</title>
+	<style type="text/css">
+	h1 {
+		text-align:center; color:black;
+	}
+	a {
+		text-decoration: none;
+	}
+    body {
+        font-family: Georgia; width: 800px; margin: 0 auto; padding: 10px;
+    }
+    hr {
+        margin-bottom: 20px auto;
+    }
+    .blog + .blog {
+        margin-top: 20px;
+    }
+    .blog-subject {
+        font-weight: bold; font-size: 20px;
+    }
+    .blog-content {
+        margin: 0; font-size: 17px;
+    }
+		.alignleft {
+		float: left;
+	}
+	.alignright {
+		float: right;
+	}
+	</style>
+</head>
+<body>
+	<a href="/unit3/blog"><h1>Nitish's CS253 Blog</h1></a>
+	<br/>
+	
+	<div class="blog">
+		<div class="blog-title"><p class="alignleft">{{x.subject}}</p><p class="alignright">{{x.cdate.date()}}</p></div>
+		<div style="clear: both;"></div>
+		<hr/>
+		<pre class="blog-content">{{x.content}}</pre>
+	</div>
+</body>
+</html>

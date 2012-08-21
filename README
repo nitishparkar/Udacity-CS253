@@ -1,0 +1,28 @@
+Udacity Web Application Engineering,
+This repository contains all the code I created for Udacity's Web Application Enginnering class.
+(http://www.udacity.com/overview/Course/cs253/CourseRev/apr2012)
+
+The application is located at:
+nitish-cs253.appspot.com
+
+The course involed creating blog, wiki and a website that lets user upload ascii arts. All valid URLs can be found in main.py 
+Here are some useful links:
+
+Ascii Chan,
+http://nitish-cs253.appspot.com/unit6/machan
+(source: unit6/AsciiChan.py)
+
+Blog,
+http://nitish-cs253.appspot.com/unit6/blog
+(source: unit6/CachedBlog.py)
+
+JSON version of blog
+http://nitish-cs253.appspot.com/unit5/blog/.json
+JSON version of each post can be accessed by adding .json to it's permalink url
+(source: unit5/JsonBlog.py)
+
+Wiki,
+http://nitish-cs253.appspot.com/final/
+
+Note: 
+The wiki determines student's grade for CS253 course. So to avoid misuse, source code of wiki is not included in this git. 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Post</title>
+	<style type="text/css">
+	h1 {
+		text-align:center; color:black; 
+	}
+	a {
+		text-decoration: none;
+	}
+    body {
+        font-family: Georgia; width: 800px; margin: 0 auto; padding: 10px;
+    }
+    .error {
+        color: red;
+    }
+    label {
+        display: block; font-size: 20px;
+    }
+    input[type=text] {
+        width: 400px; font-size: 20px; padding: 2px;
+    }
+    textarea {
+        width: 400px; height: 200px; font-size: 17px; 
+    }
+    input[type=submit] {
+        font-size: 18px;
+    }
+
+	</style>
+</head>
+<body>
+	<a href="/unit5/blog"><h1>Nitish's CS253 Blog</h1></a>
+	<br/>
+	<h2>New Post</h2>
+	<form method="post">
+		<label>
+			<div>Subject</div>
+			<input name="subject" value="{{subject}}">
+		</label>
+		<br/>
+		<label>
+			<div>Content:</div>
+			<textarea name="content">{{content}}</textarea>
+		</label>
+		<br/>
+		<div class="error">{{errormsg}}</div>
+		<input type="Submit" value="Submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit 4 Signup Form</title>
+	<style type="text/css">
+body {
+	position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    width: 800px;
+    margin: 0 auto;
+	padding: 10px;
+    color: #333;
+}
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+
+
+input[type=text] {
+    width: 300px;
+    font-size: 20px;
+    padding: 2px;
+    font-family: monospace;
+}
+
+input[type=password] {
+    width: 300px;
+    font-size: 20px;
+    padding: 2px;
+    font-family: monospace;
+}
+
+
+input[type=submit] {
+  font-size: 18px;
+}
+
+	</style>
+  </head>
+
+  <body>
+    <h2>Login</h2>
+    <form method="post">
+	<table>
+      <tr><td>Username</td>
+          <td><input type="text" name="username" value=""></td>
+      </tr>
+      <br>
+      <tr><td>Password</td>
+          <td><input type="password" name="password" value=""></td>
+      </tr>
+      <tr><td colspan="2"><div class="error">{{errormsg}}</div></td></tr>
+      <tr><td colspan="2"><input type="submit" value="submit"></td></tr>
+	</table>  
+    </form>
+  </body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nitish's CS253 Blog</title>
+	<style type="text/css">
+	h1 {
+		text-align:center
+	}
+	h6 {
+		text-align:right; font-size: 17px;
+	}
+	a {
+		text-decoration: none; color: black;
+	}
+    body {
+		font-family: Georgia; width: 800px; margin: 0 auto; padding: 10px;
+    }
+    .blog + .blog {
+        margin-top: 40px;
+    }
+    .blog-subject {
+        font-weight: bold; font-size: 20px;
+    }
+    .blog-content {
+        margin: 0; font-size: 17px;
+    }
+	.alignleft {
+		float: left;
+	}
+	.alignright {
+		float: right;
+	}
+	</style>
+</head>
+<body>
+	<h1>Nitish's CS253 Blog</h1>
+	<br/>
+	<h6><a href="/unit3/blog/newpost">create new post</a></h6>
+	{% for x in blogs %}
+	<div class="blog">
+		<div class="blog-title"><p class="alignleft"><a href="/unit3/blog/{{x.key().id()}}">{{x.subject}}</a></p><p class="alignright">{{x.cdate.date()}}</p></div>
+		<div style="clear: both;"></div>
+		<hr/>
+		<pre class="blog-content">{{x.content}}</pre>
+	</div>
+	{% endfor %}
+</body>
+</html>
