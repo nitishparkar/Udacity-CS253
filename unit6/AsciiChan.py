@@ -18,8 +18,8 @@ class GMAArt(db.Model):
     title = db.StringProperty(required=True)
     art = db.TextProperty(required=True)
     cdate = db.DateTimeProperty(auto_now_add=True)
-    cords=db.GeoPtProperty()
-    ip=db.StringProperty()
+    cords = db.GeoPtProperty()
+    ip = db.StringProperty()
 
 
 class CachedChan(webapp2.RequestHandler):
